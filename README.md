@@ -1,6 +1,6 @@
 # litecoind
 
-Docker hub: [depach/litecoindd](https://hub.docker.com/r/depach/litecoind)
+Docker hub: [depach/litecoind](https://hub.docker.com/r/depach/litecoind)
 
 Docker image of Litecoin core litecoin built from sources on ubuntu
 
