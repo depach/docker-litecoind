@@ -5,21 +5,20 @@ RUN apt-get update; \
     apt-add-repository ppa:bitcoin/bitcoin; \
     apt-get update; \
 	apt-get install -y \
-		build-essential \
-		libtool \
-		autotools-dev \
-		automake \
-		pkg-config \
-		libssl-dev \
+	build-essential \
+	libtool \
+	autotools-dev \
+	automake \
+	pkg-config \
+	libssl-dev \
         libevent-dev \
-		libboost-all-dev \
-		wget \
-		bsdmainutils \
+	libboost-all-dev \
+	wget \
+	bsdmainutils \
         git-core \
         libdb4.8-dev \
         libdb4.8++-dev \
-		nano
-RUN apt-get clean; rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+        && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /root/
 RUN git clone --branch v0.17.1 https://github.com/litecoin-project/litecoin.git
